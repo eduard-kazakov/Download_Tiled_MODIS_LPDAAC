@@ -65,6 +65,7 @@ class MODISTiledDownloader():
         # tile_date - datetime object
         # tile_num - e.g. h20v03
         parser = Parser()
+        parser.valid_links = []
         base_url = self.product_to_baseurl(product)
         if base_url == None:
             print ('Invalid product')
