@@ -23,3 +23,4 @@ while current_date <= end_date:
         for tile in tiles:
             print('Get tile %s' % tile)
             downloader.download_product_for_date_and_tile(product, current_date, tile)
+    current_date = current_date + timedelta(days=1)
